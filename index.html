@@ -15,9 +15,11 @@
 
 </head>
 <body ng-controller="bodyController">
-	<h1>{{helloWorld.example}}</h1>
+	<h1>{{helloWorld.example}} -- {{selectedOperation}}</h1>
 
-
+	<select name="operation" id="operation" ng-model="selectedOperation">
+		<option ng-repeat="item in operations" value="{{item.operationValue}}">{{item.operationName}}</option>
+	</select>
 	<input type="text" ng-model="addendo1">
 	<input type="text" ng-model="addendo2">
 	<button ng-click="eseguiSomma()">Somma</button>

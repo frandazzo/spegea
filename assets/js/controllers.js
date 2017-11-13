@@ -1,5 +1,22 @@
 app.controller("bodyController", function($scope, mathService){
 
+		$scope.operations = [
+			{
+				operationName: "Moltiplicazione",
+				operationValue: "m"
+
+			},
+						{
+				operationName: "Addizione",
+				operationValue: "s"
+
+			}
+		];
+
+		$scope.selectedOperation = $scope.operations[0].operationValue;
+
+
+
 		$scope.helloWorld = {};
 		$scope.helloWorld.example = 'Sommatore';
 
