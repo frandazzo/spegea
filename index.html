@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Esempi Angular Js</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="assets/js/middleware.js"></script>
+	<script src="assets/js/app.js"></script>
+
+	<script src="assets/js/controllers.js"></script>
+
+	<script src="assets/js/spegeaMath.js"></script>
+
+	<!-- <script src="assets/js/services.js"></script> -->
+
+</head>
+<body ng-controller="bodyController">
+	<h1>{{helloWorld.example}}</h1>
+
+
+	<input type="text" ng-model="addendo1">
+	<input type="text" ng-model="addendo2">
+	<button ng-click="eseguiSomma()">Somma</button>
+	<label >{{somma}}</label>
+</body>
+</html>
